@@ -1,0 +1,5 @@
+UI_Default_Server:
+  dedicated: true
+  name: thinh
+  displayName: Thinh
+  host: localhost

@@ -1,0 +1,12 @@
+section.searchCategory(ng-controller='search-category')
+  form(class='form-group searchCategoryForm')
+    input(placeholder='Bạn Đang Muốn Thiết kế Website gì?',novalidate,
+      spellcheck='false',
+      autocorrect='false',
+      class='form-control'
+      )
+  .search-results
+    .product(ng-repeat='product in products')
+      h1  {{product.name}}
+      p {{product.tag}}
+      p {{product.price}}

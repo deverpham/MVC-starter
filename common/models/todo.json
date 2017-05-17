@@ -1,0 +1,49 @@
+{
+  "name": "todo",
+  "plural": "todo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "isArray": false
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": false
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "date" : {
+      "type": "date",
+      "required" :true
+    },
+    "priority" : {
+      "type" : "string",
+      "required":true
+    },
+    "status" : {
+      "type" : "string",
+      "required" : false
+    },
+    "datecompleted" : {
+      "type" :"date",
+      "required" : false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

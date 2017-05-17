@@ -1,0 +1,14 @@
+{
+    "compileOnSave":true,
+    "compilerOptions": {
+        "lib": [ "es2015","es2017","es2016"],
+        "target" :"es5",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "declaration": false,
+        "strictNullChecks":true,
+        "moduleResolution": "node",
+        "noImplicitUseStrict":true,
+        "outDir": "./dist/"
+    }
+}

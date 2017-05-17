@@ -1,0 +1,19 @@
+html
+  head
+    include ../meta.pug
+    script(src='/public/js/admin.js')
+  body(ng-app='admin',ng-controller='addproduct')
+    form(class='form-group',style='width:50%',ng-submit="formSubmit()")
+      input(name='name',ng-model='product.name',class='form-control',placeholder='name')
+      input(name='id',ng-model='product.id',class='form-control',placeholder='id')
+      input(name='price',ng-model='product.price',class='form-control',placeholder='price')
+      input(name='tag',ng-model='product.tag',class='form-control',placeholder='tag')
+      input(name='linkimage',ng-model='product.linkimage',class='form-control',placeholder='linkimage')
+      input(name='linkdemo',ng-model='product.linkdemo',class='form-control',placeholder='linkdemo')
+      input(name='description',ng-model='product.description',class='form-control',placeholder='description')
+      button(type='submit',name='submit',class='btn') Add
+    button(class='btn btn-primary',ng-click='loadProducts()') Load Products
+    ul
+      li(ng-repeat='listproduct in listProducts')
+        p {{listproduct.id}}
+          a( href='#',ng-click='deleteProduct(listproduct.id)') delete
